@@ -139,6 +139,26 @@
             },
           },
         {%- endif -%}
+        {%- if site.dribble_username -%}
+          {
+            id: 'socials-dribble',
+            title: 'Dribble',
+            section: 'Socials',
+            handler: () => {
+              window.open("https://dribbble.com/{{ site.dribble_username }}", "_blank");
+            },
+          },
+        {%- endif -%}
+        {%- if site.producthunt_username -%}
+          {
+            id: 'socials-producthunt',
+            title: 'Product Hunt',
+            section: 'Socials',
+            handler: () => {
+              window.open("https://producthunt.com/{{ site.producthunt_username }}", "_blank");
+            },
+          },
+        {%- endif -%}
         {%- if site.whatsapp_number -%}
           {
             id: 'socials-whatsapp',

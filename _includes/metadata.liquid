@@ -120,6 +120,14 @@
     {% capture link %}https://telegram.me/{{ site.telegram_username }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
+  {% if site.dribble_username %}
+    {% capture link %}https://dribbble.com/{{ site.dribble_username }}{% endcapture %}
+    {% assign sameaslinks = sameaslinks | push: link %}
+  {% endif %}
+  {% if site.producthunt_username %}
+    {% capture link %}https://producthunt.com/{{ site.producthunt_username }}{% endcapture %}
+    {% assign sameaslinks = sameaslinks | push: link %}
+  {% endif %}
   {% if site.linkedin_username %}
     {% capture link %}https://www.linkedin.com/in/{{ site.linkedin_username }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
